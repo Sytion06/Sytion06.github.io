@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Steven Yang — Portfolio</title>
+    <meta
+      name="description"
+      content="Portfolio of Steven Yang — CS/Data Science student."
+    />
+
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <canvas id="starfield" aria-hidden="true"></canvas>
+
+    <header class="top-nav">
+      <nav class="nav-links" aria-label="Primary navigation">
+        <a href="#top">Home</a>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="section hero">
+        <div class="container hero-grid">
+          <div>
+            <h1>Hello! I’m <span class="accent">Steven</span></h1>
+            <p class="lead">
+              Data Science / Computer Science student
+              <br />
+              @ University of Toronto
+            </p>
+
+            <div class="cta-row">
+              <a class="btn" href="#projects">View projects</a>
+              <a class="btn ghost" href="#contact">Contact me</a>
+            </div>
+          </div>
+
+          <div class="hero-card">
+            <div class="avatar" aria-hidden="true">SY</div>
+            <div>
+              <h2>Now</h2>
+              <p class="muted">
+                Building projects that stand out for internships: optimizer visualization tooling,
+                clean-architecture apps, and data analysis case studies.
+              </p>
+              <a class="link" href="#projects">See featured work →</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="section">
+        <div class="container split">
+          <div>
+            <h2>About</h2>
+            <p>
+              I’m a CS/Data Science student who likes building tools that make complex ideas easier to see—
+              especially optimization, algorithms, and data products.
+            </p>
+            <p class="muted">Replace this with your real bio + what roles you’re seeking.</p>
+          </div>
+
+          <div class="panel">
+            <h3>Quick info</h3>
+            <ul class="list">
+              <li><span>Location</span><span>Toronto, Canada</span></li>
+              <li><span>Interests</span><span>AI, Optimization, Data Viz</span></li>
+              <li><span>Open to</span><span>Internships, Research</span></li>
+            </ul>
+            <a class="btn ghost" href="#" download>Download resume (PDF)</a>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects" class="section">
+        <div class="container">
+          <div class="section-head">
+            <h2>Projects</h2>
+            <p class="muted">Add 3–5 best projects. Each should have a short pitch + links.</p>
+          </div>
+
+          <div class="grid cards">
+            <article class="card">
+              <h3>Loss Landscape Optimizer Visualizer</h3>
+              <p class="muted">Visualize how optimizers move through loss surfaces (software tool).</p>
+              <ul class="tags">
+                <li>Python</li>
+                <li>Streamlit</li>
+                <li>Optimization</li>
+              </ul>
+              <div class="card-actions">
+                <a class="btn small" href="#" target="_blank" rel="noreferrer">Live demo</a>
+                <a class="btn small ghost" href="#" target="_blank" rel="noreferrer">GitHub</a>
+              </div>
+            </article>
+
+            <article class="card">
+              <h3>GroupFlow</h3>
+              <p class="muted">Collaboration app: tasks, roles, memberships, dashboards.</p>
+              <ul class="tags">
+                <li>Java</li>
+                <li>Swing</li>
+                <li>Clean Architecture</li>
+              </ul>
+              <div class="card-actions">
+                <a class="btn small" href="#" target="_blank" rel="noreferrer">Case study</a>
+                <a class="btn small ghost" href="#" target="_blank" rel="noreferrer">GitHub</a>
+              </div>
+            </article>
+
+            <article class="card">
+              <h3>Survey / Data Storytelling</h3>
+              <p class="muted">Exploratory analysis + visualizations + conclusions.</p>
+              <ul class="tags">
+                <li>Pandas</li>
+                <li>Stats</li>
+                <li>Viz</li>
+              </ul>
+              <div class="card-actions">
+                <a class="btn small" href="#" target="_blank" rel="noreferrer">Report</a>
+                <a class="btn small ghost" href="#" target="_blank" rel="noreferrer">Notebook</a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="section contact-section">
+        <div class="container contact-grid">
+
+          <!-- LEFT -->
+          <div class="contact-left">
+            <h2 class="contact-title">Contact Me</h2>
+            <p class="contact-email">Email:
+              <a href="mailto:steve.yang@mail.utoronto.ca">
+                steve.yang@mail.utoronto.ca
+              </a>
+            </p>
+            <p class="contact-phone">Phone:
+              <a href="tel:+14165551234">
+                +1 (647) 469-6927
+              </a>
+            </p>
+
+            <div class="contact-icons">
+              <a href="https://github.com/Sytion06" target="_blank" rel="noreferrer" aria-label="GitHub">
+                <i data-lucide="github"></i>
+              </a>
+
+              <a href="https://www.linkedin.com/in/steven-yang-7760293a3" target="_blank" rel="noreferrer" aria-label="LinkedIn">
+                <i data-lucide="linkedin"></i>
+              </a>
+
+              <a href="https://instagram.com/svy26120" target="_blank" rel="noreferrer" aria-label="Instagram">
+                <i data-lucide="instagram"></i>
+              </a>
+
+              <a href="https://discord.com/users/YOUR_DISCORD_ID" target="_blank" rel="noreferrer" aria-label="Discord">
+                <span class="iconify" data-icon="mdi:discord" aria-hidden="true"></span>
+              </a>
+
+            </div>
+          </div>
+
+          <!-- RIGHT -->
+          <form id="contact-form" class="contact-form">
+            <input type="text" name="name" placeholder="Your Name" required />
+            <input type="email" name="email" placeholder="Your Email" required />
+            <input type="text" name="subject" placeholder="Subject" required />
+            <textarea name="message" placeholder="Your Message" required></textarea>
+
+            <button type="submit" class="btn send-btn">Send Message</button>
+          </form>
+
+        </div>
+      </section>
+
+    </main>
+
+    <footer class="footer">
+      <div class="container footer-row">
+        <small>© <span id="year"></span> Steven Yang. All Rights Reserved.</small>
+        <small class="muted">Built with HTML/CSS/JS</small>
+      </div>
+    </footer>
+
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <script src="https://code.iconify.design/3/3.1.1/iconify.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
