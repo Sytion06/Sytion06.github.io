@@ -10,7 +10,7 @@
   --accent:#7c9cff;
   --shadow:0 12px 30px rgba(0,0,0,.35);
 
-  --nav-h: 72px;           /* navbar height for offset math */
+  --nav-h: 60px;           /* navbar height for offset math */
   --section-pad: 96px;     /* vertical breathing room */
 }
 
@@ -549,3 +549,95 @@ main, footer { position: relative; z-index: 1; }
   height: 25px;
 }
 
+/* =========================
+   Education card (fixed layout)
+========================= */
+.edu-card h3 {
+  margin: 0;
+  font-size: 1.1rem;
+}
+
+.edu-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.edu-title {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.edu-icon {
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+  display: grid;
+  place-items: center;
+  background: color-mix(in srgb, var(--accent) 22%, var(--panel));
+  border: 1px solid var(--border);
+  font-size: 1.2rem;
+}
+
+.edu-gpa {
+  text-align: right;
+}
+
+.edu-meta {
+  display: flex;
+  gap: 16px;
+  font-size: 0.9rem;
+  margin-top: 6px;
+}
+
+.edu-divider {
+  border: none;
+  border-top: 1px solid var(--border);
+  margin: 16px 0;
+}
+
+.edu-courses { margin-top: 2px; }
+
+.edu-tags {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.edu-tags li {
+  display: inline-block;
+  padding: 6px 12px;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  color: var(--muted);
+  font-weight: 700;
+  font-size: 0.85rem;
+}
+
+.hero-quick h3 {
+  margin-bottom: 10px;
+}
+
+.hero-quick .list {
+  margin-bottom: 18px;
+}
+
+.hero-quick .btn {
+  align-self: flex-start;
+}
+
+/* Fix hero quick card: it does NOT use the avatar grid layout */
+.hero-card.hero-quick{
+  display: block;          /* override the 2-column grid */
+  padding: 22px;           /* slightly nicer spacing for this card */
+}
+
+/* Optional: tighten list spacing inside hero quick */
+.hero-card.hero-quick .list{
+  margin: 10px 0 18px;
+}
