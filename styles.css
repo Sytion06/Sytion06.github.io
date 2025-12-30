@@ -39,6 +39,9 @@ body{
 
 section { scroll-margin-top: calc(var(--nav-h) + 16px); }
 
+#contact { scroll-margin-top: calc(var(--nav-h) - 200px); }
+#projects { scroll-margin-top: calc(var(--nav-h) - 100px); }
+
 .container{
   width: min(1100px, 92vw);
   margin: 0 auto;
