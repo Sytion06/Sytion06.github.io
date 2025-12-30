@@ -29,7 +29,7 @@
       <section class="section hero">
         <div class="container hero-grid">
           <div>
-            <h1>Hello! I’m <span class="accent">Steven</span></h1>
+            <h1>Hello, I’m <span class="accent">Steven</span></h1>
             <p class="lead">
               Data Science / Computer Science student
               <br />
@@ -41,6 +41,7 @@
               <a class="btn ghost" href="#contact">Contact me</a>
             </div>
           </div>
+
           <div class="hero-card hero-quick">
             <h3>Quick info</h3>
 
@@ -50,73 +51,125 @@
               <li><span>Open to</span><span>Internships, Research</span></li>
             </ul>
 
-            <a
-              class="btn ghost"
-              href="assets/Steven_Yang_Resume.pdf"
-              download
-            >
+            <a class="btn ghost" href="assets/Steven_Yang_Resume.pdf" download>
               Download résumé (PDF)
             </a>
           </div>
         </div>
       </section>
 
+      <!-- ABOUT -->
       <section id="about" class="section">
-        <div class="container split">
-          <div>
-            <h2>About</h2>
-            <p>
-              I’m a CS/Data Science student who likes building tools that make complex ideas easier to see—
-              especially optimization, algorithms, and data products.
-            </p>
-            <p class="muted">Replace this with your real bio + what roles you’re seeking.</p>
-            <div style="margin-top: 18px;">
-              <a
-                class="btn"
-                href="assets/Steven_Yang_Resume.pdf"
-                download
-              >
-                Download résumé
-              </a>
-            </div>
-          </div>
+        <div class="container">
 
-          <div class="panel edu-card">
-            <div class="edu-header">
-              <div class="edu-title">
-                <span class="edu-icon" aria-hidden="true">🎓</span>
-                <div>
-                  <h3>University of Toronto</h3>
-                  <p class="muted">Bachelor of Science in Computer Science</p>
+          <!-- TOP ROW: About (left) + Education card (right) -->
+          <div class="split">
+            <div>
+              <h2>About</h2>
+              <p>
+                I’m a CS/Data Science student who likes building tools that make complex ideas easier to see—
+                especially optimization, algorithms, and data products.
+              </p>
+              <p class="muted">Replace this with your real bio + what roles you’re seeking.</p>
+
+              <div style="margin-top: 18px;">
+                <a class="btn" href="assets/Steven_Yang_Resume.pdf" download>
+                  Download résumé
+                </a>
+              </div>
+            </div>
+
+            <div class="panel edu-card">
+              <div class="edu-header">
+                <div class="edu-title">
+                  <span class="edu-icon" aria-hidden="true">🎓</span>
+                  <div>
+                    <h3>University of Toronto</h3>
+                    <p class="muted">Bachelor of Science in Computer Science</p>
+                  </div>
+                </div>
+
+                <div class="edu-gpa">
+                  <span class="label">cGPA</span>
+                  <span class="value accent">4.0/4.0</span>
                 </div>
               </div>
 
-              <div class="edu-gpa">
-                <span class="label">cGPA</span>
-                <span class="value accent">4.0/4.0</span>
+              <div class="edu-meta muted">
+                <span>2024 – 2028</span>
+                <span>Toronto, ON</span>
+              </div>
+
+              <hr class="edu-divider" />
+
+              <div class="edu-courses">
+                <p class="label">Relevant Courses</p>
+                <ul class="edu-tags">
+                  <li>CSC207 · Software Design</li>
+                  <li>MAT237 · Advanced Calculus</li>
+                  <li>MAT223/224 · Linear Algebra</li>
+                  <li>STA257/261 · Probability & Statistics</li>
+                </ul>
               </div>
             </div>
+          </div>
 
-            <div class="edu-meta muted">
-              <span>2024 – 2028</span>
-              <span>Toronto, ON</span>
-            </div>
+          <!-- BOTTOM ROW: Skills (FULL WIDTH under both columns) -->
+          <div class="panel skills-panel">
+            <h3 class="skills-title">Skills</h3>
 
-            <hr class="edu-divider" />
+            <div class="skills-grid">
+              <div class="skill-card">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java">
+                <span>Java</span>
+              </div>
 
-            <div class="edu-courses">
-              <p class="label">Relevant Courses</p>
-              <ul class="edu-tags">
-                <li>CSC207 · Software Design</li>
-                <li>MAT237 · Advanced Calculus</li>
-                <li>MAT223/224 · Linear Algebra</li>
-                <li>STA257/261 · Probability & Statistics</li>
-              </ul>
+              <div class="skill-card">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python">
+                <span>Python</span>
+              </div>
+
+              <div class="skill-card">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML">
+                <span>HTML</span>
+              </div>
+
+              <div class="skill-card">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS">
+                <span>CSS</span>
+              </div>
+
+              <div class="skill-card">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/latex/latex-original.svg" alt="LaTeX">
+                <span>LaTeX</span>
+              </div>
+
+              <div class="skill-card">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/matplotlib/matplotlib-original.svg" alt="Matplotlib">
+                <span>Matplotlib</span>
+              </div>
+
+              <div class="skill-card">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pandas/pandas-original.svg" alt="Pandas">
+                <span>Pandas</span>
+              </div>
+
+              <div class="skill-card">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/scikitlearn/scikitlearn-original.svg" alt="Scikit-learn">
+                <span>Scikit-learn</span>
+              </div>
+
+              <div class="skill-card">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git">
+                <span>Git</span>
+              </div>
             </div>
           </div>
+
         </div>
       </section>
 
+      <!-- PROJECTS -->
       <section id="projects" class="section">
         <div class="container">
           <div class="section-head">
@@ -170,6 +223,7 @@
         </div>
       </section>
 
+      <!-- CONTACT -->
       <section id="contact" class="section contact-section">
         <div class="container contact-grid">
 
@@ -203,7 +257,6 @@
               <a href="https://discord.com/users/YOUR_DISCORD_ID" target="_blank" rel="noreferrer" aria-label="Discord">
                 <span class="iconify" data-icon="mdi:discord" aria-hidden="true"></span>
               </a>
-
             </div>
           </div>
 
