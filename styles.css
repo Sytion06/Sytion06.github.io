@@ -248,8 +248,9 @@ main { padding-top: var(--nav-h); }
 
 .grid.cards{
   display:grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 16px;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+  row-gap: 28px;
 }
 @media (max-width: 900px){
   .grid.cards{ grid-template-columns: 1fr; }
@@ -259,7 +260,7 @@ main { padding-top: var(--nav-h); }
   border: 1px solid var(--border);
   background: var(--panel);
   border-radius: 22px;
-  padding: 18px;
+  padding: 22px;
   box-shadow: var(--shadow);
 }
 
