@@ -1,0 +1,119 @@
+% =========================
+% Resume — Centered Header + Extra Section Spacing
+% =========================
+\documentclass[10.5pt]{article}
+
+\usepackage[margin=0.75in]{geometry}
+\usepackage[hidelinks]{hyperref}
+\usepackage{enumitem}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{titlesec}
+\usepackage{xcolor}
+\usepackage{setspace}
+
+\pagenumbering{gobble}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+
+% Tight bullets
+\setlist[itemize]{leftmargin=*, nosep}
+
+% Section formatting + MORE SPACE
+\titleformat{\section}{\bfseries\large}{}{0pt}{}[\titlerule]
+\titlespacing*{\section}{0pt}{14pt}{8pt} % ↑ increased spacing
+
+% Helpers
+\newcommand{\contactsep}{\hspace{10pt}|\hspace{10pt}}
+\newcommand{\roleline}[2]{\textbf{#1}\hfill \textbf{#2}}
+\newcommand{\orgline}[2]{\textit{#1}\hfill \textit{#2}}
+
+\begin{document}
+
+% ===== Centered Header =====
+\begin{center}
+    {\LARGE \textbf{STEVEN YANG}} \\[8pt]
+    \faPhone\ (647)469-6927
+    \contactsep
+    \faEnvelope\ \href{mailto:steve.yang@mail.utoronto.ca}{steve.yang@mail.utoronto.ca}
+    \contactsep
+    \faGlobe\ \href{https://Sytion06.github.io}{Website}
+    \contactsep
+    \faLinkedin\ \href{https://www.linkedin.com/in/steven-yang-7760293a3/}{linkedin}
+\end{center}
+
+\section*{Summary}
+Second-year Data Science Specialist and Computer Science major at the University of Toronto with strong foundations in software design, data analysis, and statistical modeling. Experienced in Java-based system design, data pipelines, and applied statistical analysis through academic and team projects. Seeking software engineering or data-focused internship/research opportunities.
+
+% ===== Technical Skills =====
+\section*{Technical Skills}
+\begin{itemize}
+  \item \textbf{Programming Languages:} Python, Java, C, JavaScript, HTML/CSS
+  \item \textbf{Developer Tools:} Git/GitHub, Linux, VS Code, IntelliJ, Jupyter, LaTeX
+  \item \textbf{Frameworks/Libraries:} NumPy, pandas, matplotlib, scikit-learn, SciPy, statesmodels
+\end{itemize}
+
+% ===== Education =====
+\section*{Education}
+\roleline{University of Toronto}{Sep. 2024 -- May 2028 (Expected)}
+\begin{itemize}
+  \item \textit{Honours Bachelor of Science}, Data Science Specialist, Computer Science Major
+  \item GPA: 4.0/4.0
+  \item Relevant CourseWorks: Software Design, Data Structures and Analysis, Data Science, Probability and Statistics, \\ Linear Algebra, Multivariable Calculus
+\end{itemize}
+
+% ===== Projects =====
+\section*{Projects}
+
+\roleline{Question Bank Platform}{2026}
+\orgline{Java, OpenAI API, FullStack}{}
+\begin{itemize}
+  \item Built a full-stack Java application to extract and structure math exam questions from PDFs into a searchable digital database.
+  \item Integrated \textbf{OCR} and multimodal \textbf{OpenAI Vision models} to parse question text, diagrams, metadata, and page-level images..
+  \item Designed an asynchronous processing pipeline with confidence scoring and manual review flags to improve extraction reliability.
+  \item Implemented automated PDF segmentation, text cleaning, and structured JSON storage using Spring Boot + JPA.
+\end{itemize}
+
+\vspace{8pt}
+
+\roleline{GroupFlow}{2025}
+\orgline{Java, Swing, Clean Architecture, Git, JUnit, MongoDB}{}
+\begin{itemize}
+  \item Designed and implemented a collaborative task and group management application using \textbf{Clean Architecture}, separating entities, use cases, and UI layers.
+  \item Built core features including group creation, role-based permissions, task assignment, and progress tracking.
+  \item Improved code maintainability and testability through interface-driven design and unit testing with \textbf{JUnit}.
+  \item Collaborated in a team environment using Git-based workflows, pull requests, and code reviews.
+\end{itemize}
+
+\vspace{8pt}
+
+\roleline{Data Analysis Project}{2024}
+\orgline{Python, pandas, NumPy, matplotlib, scikit-learn}{}
+\begin{itemize}
+  \item Analyzed real-world datasets in a group of 4 to explore relationships between variables using summary statistics and data visualizations.
+  \item Performed data cleaning and preprocessing, handling missing values and inconsistent data formats.
+  \item Applied statistical techniques such as logistic regression and train/test split to support conclusions.
+  \item Presented findings through a 20-page slide deck.
+\end{itemize}
+
+% ===== Experience =====
+% \section*{Experience}
+% \roleline{ROLE TITLE}{DATES}
+% \orgline{Organization}{City, Province}
+% \begin{itemize}
+%   \item Worked on \textbf{WHAT} using \textbf{TECH}, achieving \textbf{RESULT}.
+%   \item Collaborated with \textbf{N} teammates using Git-based workflows.
+% \end{itemize}
+
+% ===== Activities / Awards =====
+\section*{Awards}
+\begin{itemize}
+  \item \textbf{Dean’s List Scholar} \hfill 2025 \\
+        University of Toronto
+
+  \vspace{8pt}
+  \item \textbf{Woodsworth College Scholarship Fund} \hfill 2026 \\
+        Woodsworth College, University of Toronto
+\end{itemize}
+
+\end{document}
