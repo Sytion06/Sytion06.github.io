@@ -138,3 +138,33 @@ document.getElementById("year").textContent = new Date().getFullYear();
 document.addEventListener("DOMContentLoaded", () => {
   if (window.lucide) lucide.createIcons();
 });
+
+// =========================
+// Project image modal
+// =========================
+document.addEventListener("DOMContentLoaded", () => {
+  const modal = document.getElementById("image-modal");
+  const modalImg = document.getElementById("image-modal-img");
+  const closeBtn = document.querySelector(".image-modal-close");
+
+  if (!modal || !modalImg || !closeBtn) return;
+
+  document.querySelectorAll(".project-images img").forEach((img) => {
+    img.addEventListener("click", () => {
+      modalImg.src = img.src;
+      modal.style.display = "flex";
+    });
+  });
+
+  closeBtn.addEventListener("click", () => {
+    modal.style.display = "none";
+    modalImg.src = "";
+  });
+
+  modal.addEventListener("click", (e) => {
+    if (e.target === modal) {
+      modal.style.display = "none";
+      modalImg.src = "";
+    }
+  });
+});
