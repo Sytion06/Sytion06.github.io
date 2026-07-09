@@ -21,18 +21,19 @@
 
 % Section formatting + MORE SPACE
 \titleformat{\section}{\bfseries\large}{}{0pt}{}[\titlerule]
-\titlespacing*{\section}{0pt}{14pt}{8pt} % ↑ increased spacing
+\titlespacing*{\section}{0pt}{14pt}{6pt}
 
 % Helpers
 \newcommand{\contactsep}{\hspace{10pt}|\hspace{10pt}}
 \newcommand{\roleline}[2]{\textbf{#1}\hfill \textbf{#2}}
+\newcommand{\experienceline}[2]{\textbf{#1}\hfill \textbf{#2}}
 \newcommand{\orgline}[2]{\textit{#1}\hfill \textit{#2}}
 
 \begin{document}
 
 % ===== Centered Header =====
 \begin{center}
-    {\LARGE \textbf{STEVEN YANG}} \\[8pt]
+    {\LARGE \textbf{STEVEN YANG}} \\[6pt]
     \faPhone\ (647)469-6927
     \contactsep
     \faEnvelope\ \href{mailto:steve.yang@mail.utoronto.ca}{steve.yang@mail.utoronto.ca}
@@ -42,14 +43,11 @@
     \faLinkedin\ \href{https://www.linkedin.com/in/steven-yang-7760293a3/}{linkedin}
 \end{center}
 
-\section*{Summary}
-Second-year Data Science Specialist and Computer Science major at the University of Toronto with experience in software design, statistical modeling, and data analysis. Interested in software engineering, machine learning, and data-focused internship or research opportunities.
-
 % ===== Technical Skills =====
 \section*{Technical Skills}
 \begin{itemize}
   \item \textbf{Programming Languages:} Python, Java, C, JavaScript, HTML/CSS
-  \item \textbf{Developer Tools:} Git/GitHub, Linux, VS Code, IntelliJ, Jupyter, LaTeX
+  \item \textbf{Developer Tools:} Codex, Claude Code, Git/GitHub, Linux, VS Code, IntelliJ, Jupyter, LaTeX
   \item \textbf{Frameworks/Libraries:} NumPy, pandas, matplotlib, scikit-learn, SciPy, statsmodels
 \end{itemize}
 
@@ -59,7 +57,18 @@ Second-year Data Science Specialist and Computer Science major at the University
 \begin{itemize}
   \item \textit{Honours Bachelor of Science}, Data Science Specialist, Computer Science Major
   \item cGPA: 4.0/4.0
-  \item Relevant CourseWorks: Software Design, Data Structures and Analysis, Data Science, Probability and Statistics, \\ Linear Algebra, Multivariable Calculus
+  \item Relevant Courseworks: Software Design, Software Tools and System Programming, Data Structures and Analysis, Data Science, Probability and Statistics, Linear Algebra, Multivariable Calculus
+\end{itemize}
+
+% ===== Experience =====
+\section*{Experience}
+
+\experienceline{Research and Development Intern}{May 2026 -- August 2026 (Expected)}\\[-1pt]
+\orgline{NSFOCUS}{Beijing, China}
+\begin{itemize}
+  \item Built \textbf{MVP} components for a \textbf{cyber monitoring} platform, supporting threat-data collection and analysis.
+  \item Prototyped a client-profile-driven \textbf{threat intelligence} workflow for structured event matching, deduplication, and delivery decision. 
+  \item Analyzed \textbf{AI Coding Agent}'s architecture and workflow in a research report.
 \end{itemize}
 
 % ===== Projects =====
@@ -70,22 +79,21 @@ Second-year Data Science Specialist and Computer Science major at the University
 \begin{itemize}
   \item Analyzed NHANES 2021--2023 health and nutrition datasets in a team of 2 to investigate relationships between demographic, dietary, and supplement-use patterns.
   \item Performed large-scale \textbf{data cleaning}, \textbf{preprocessing}, feature engineering across multiple linked survey datasets.
-  \item Built multiple statistical and machine learning models to classify supplement users and evaluate predictive factors.
-  \item Created visualizations and quantitative reports to communicate trends, model performance, and public health insights.
+  \item Built multiple statistical and \textbf{machine learning} models to classify supplement users and evaluate predictive factors.
+  \item Created \textbf{visualizations} and quantitative reports to communicate trends, model performance, and public health insights.
 \end{itemize}
 
-\vspace{8pt}
+\vspace{6pt}
 
 \roleline{Question Bank Platform}{2026}
-\orgline{Java, OpenAI API, FullStack}{}
+\orgline{Java, OpenAI API, Full-stack}{}
 \begin{itemize}
   \item Built a full-stack Java application to extract and structure math exam questions from PDFs into a searchable digital database.
   \item Integrated \textbf{OCR} and multimodal \textbf{OpenAI Vision models} to parse question text, diagrams, metadata, and page-level images..
-  \item Designed an asynchronous processing pipeline with confidence scoring and manual review flags to improve extraction reliability.
-  \item Implemented automated PDF segmentation, text cleaning, and structured JSON storage using Spring Boot + JPA.
+  \item Designed async processing with confidence scoring, manual review flags, PDF segmentation, and structured JSON storage.
 \end{itemize}
 
-\vspace{8pt}
+\vspace{6pt}
 
 \roleline{GroupFlow}{2025}
 \orgline{Java, Swing, Clean Architecture, Git, JUnit, MongoDB}{}
@@ -93,17 +101,8 @@ Second-year Data Science Specialist and Computer Science major at the University
   \item Designed and implemented a collaborative task and group management application using \textbf{Clean Architecture}, separating entities, use cases, and UI layers.
   \item Built core features including group creation, role-based permissions, task assignment, and progress tracking.
   \item Improved code maintainability and testability through interface-driven design and unit testing with \textbf{JUnit}.
-  \item Collaborated in a team environment using Git-based workflows, pull requests, and code reviews.
+  \item Collaborated in a team environment using \textbf{Git-based workflows}, pull requests, and code reviews.
 \end{itemize}
-
-% ===== Experience =====
-% \section*{Experience}
-% \roleline{ROLE TITLE}{DATES}
-% \orgline{Organization}{City, Province}
-% \begin{itemize}
-%   \item Worked on \textbf{WHAT} using \textbf{TECH}, achieving \textbf{RESULT}.
-%   \item Collaborated with \textbf{N} teammates using Git-based workflows.
-% \end{itemize}
 
 % ===== Activities / Awards =====
 \section*{Awards}
@@ -111,7 +110,7 @@ Second-year Data Science Specialist and Computer Science major at the University
   \item \textbf{Dean’s List Scholar} \hfill 2025 \\
         University of Toronto
 
-  \vspace{8pt}
+  \vspace{6pt}
   \item \textbf{Woodsworth College Scholarship Fund} \hfill 2026 \\
         Woodsworth College, University of Toronto
 \end{itemize}
