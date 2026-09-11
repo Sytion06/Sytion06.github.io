@@ -1,7 +1,8 @@
 % =========================
 % Resume — Centered Header + Extra Section Spacing
 % =========================
-\documentclass[10.5pt]{article}
+\RequirePackage{fix-cm}
+\documentclass[10pt]{article}
 
 \usepackage[margin=0.75in]{geometry}
 \usepackage[hidelinks]{hyperref}
@@ -11,6 +12,11 @@
 \usepackage{titlesec}
 \usepackage{xcolor}
 \usepackage{setspace}
+
+% Reduce all used text sizes by 3% to keep the resume on one page.
+\renewcommand{\normalsize}{\fontsize{9.7pt}{11.64pt}\selectfont}
+\renewcommand{\large}{\fontsize{11.64pt}{13.58pt}\selectfont}
+\renewcommand{\LARGE}{\fontsize{16.76pt}{21.34pt}\selectfont}
 
 \pagenumbering{gobble}
 \setlength{\parindent}{0pt}
@@ -46,9 +52,9 @@
 % ===== Technical Skills =====
 \section*{Technical Skills}
 \begin{itemize}
-  \item \textbf{Programming Languages:} Python, Java, C, JavaScript, HTML/CSS
-  \item \textbf{Developer Tools:} Codex, Claude Code, Git/GitHub, Linux, VS Code, IntelliJ, Jupyter, LaTeX, PostgreSQL
-  \item \textbf{Frameworks/Libraries:} NumPy, pandas, matplotlib, scikit-learn, SciPy, statsmodels
+  \item \textbf{Programming Languages:} Python, Java, C, JavaScript, HTML/CSS, Rust
+  \item \textbf{Developer Tools:} Codex, Claude Code, Git/GitHub, Linux, VS Code, IntelliJ, Jupyter, LaTeX, PostgreSQL, Docker
+  \item \textbf{Frameworks/Libraries:} NumPy, pandas, matplotlib, scikit-learn, SciPy, statsmodels, TensorFlow
 \end{itemize}
 
 % ===== Education =====
