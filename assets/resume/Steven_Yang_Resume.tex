@@ -27,7 +27,7 @@
 
 % Section formatting + MORE SPACE
 \titleformat{\section}{\bfseries\large}{}{0pt}{}[\titlerule]
-\titlespacing*{\section}{0pt}{14pt}{6pt}
+\titlespacing*{\section}{0pt}{12pt}{5pt}
 
 % Helpers
 \newcommand{\contactsep}{\hspace{10pt}|\hspace{10pt}}
@@ -66,6 +66,16 @@
   \item Relevant Courseworks: Software Design, Software Tools and System Programming, Data Structures and Analysis, Data Science, Probability and Statistics, Linear Algebra, Multivariable Calculus
 \end{itemize}
 
+% ===== Research Experience =====
+\section*{Research}
+\experienceline{Student Researcher}{Sep. 2024 -- Present}\\[-1pt]
+\orgline{University of Toronto}{}
+\begin{itemize}
+  \item Build \textbf{AgentLangBench} to evaluate code generation, formal verification, and runtime performance across programming languages for AI agents.
+  \item Surveyed 42 languages and tools for AI agents. Used pinned toolchains and repeatable Linux tests to identify 16 entries that passed all applicable checks without workarounds.
+  \item Audited AI-generated solutions across languages to assess whether their contracts captured the original task requirements.
+\end{itemize}
+
 % ===== Experience =====
 \section*{Experience}
 
@@ -83,10 +93,9 @@
 \roleline{NHANES Supplement Use Analysis}{2026}
 \orgline{Python, pandas, NumPy, matplotlib, scikit-learn}{}
 \begin{itemize}
-  \item Analyzed NHANES 2021--2023 health and nutrition datasets in a team of 2 to investigate relationships between demographic, dietary, and supplement-use patterns.
-  \item Performed large-scale \textbf{data cleaning}, \textbf{preprocessing}, feature engineering across multiple linked survey datasets.
-  \item Built statistical and \textbf{machine learning} models to classify supplement uses and identify predictive factors.
-  \item Created \textbf{visualizations} and quantitative reports to communicate trends, model performance, and public health insights.
+  \item Analyzed NHANES 2021–2023 health and nutrition datasets in a team of 2 to investigate relationships between demographic, dietary, and supplement-use patterns
+  \item Performed large-scale \textbf{data cleaning}, \textbf{preprocessing}, \textbf{feature engineering} across multiple linked survey datasets.
+  \item Modeled supplement use with statistical and \textbf{machine learning} methods and visualized predictive factors and model performance.
 \end{itemize}
 
 \vspace{6pt}
@@ -94,20 +103,8 @@
 \roleline{Question Bank Platform}{2026}
 \orgline{Java, OpenAI API, Full-stack}{}
 \begin{itemize}
-  \item Built a full-stack Java application to extract and structure math exam questions from PDFs into a searchable digital database.
-  \item Integrated \textbf{OCR} and multimodal \textbf{OpenAI Vision models} to parse question text, diagrams, metadata, and page-level images..
-  \item Designed async processing with confidence scoring, manual review flags, PDF segmentation, and structured JSON storage.
-\end{itemize}
-
-\vspace{6pt}
-
-\roleline{GroupFlow}{2025}
-\orgline{Java, Swing, Clean Architecture, Git, JUnit, MongoDB}{}
-\begin{itemize}
-  \item Designed and implemented a collaborative task and group management application using \textbf{Clean Architecture}, separating entities, use cases, and UI layers.
-  \item Built core features including group creation, role-based permissions, task assignment, and progress tracking.
-  \item Improved code maintainability and testability through interface-driven design and unit testing with \textbf{JUnit}.
-  \item Collaborated in a team environment using \textbf{Git-based workflows}, pull requests, and code reviews.
+  \item Built a Java application that uses \textbf{OCR} and \textbf{OpenAI Vision} to extract math questions and diagrams from PDFs into a searchable database.
+  \item Designed an asynchronous pipeline to segment PDFs, store questions as JSON, and flag low-confidence results for review.
 \end{itemize}
 
 % ===== Activities / Awards =====
