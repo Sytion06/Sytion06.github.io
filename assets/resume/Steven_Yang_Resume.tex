@@ -62,12 +62,12 @@
 
 % ===== Research Experience =====
 \section*{Research}
-\experienceline{Student Researcher}{Sep. 2026 -- Present}\\[-1pt]
+\experienceline{Agentic Languages Evaluations}{Sep. 2026 -- Present}\\[-1pt]
 \orgline{University of Toronto}{}
 \begin{itemize}
-  \item Build \textbf{AgentLangBench} to evaluate code generation, formal verification, and runtime performance across programming languages for AI agents.
-  \item Surveyed 42 languages and tools for AI agents. Used pinned toolchains and repeatable Linux tests to identify 16 entries that passed all applicable checks without workarounds.
-  \item Audited AI-generated solutions across languages to assess whether their contracts captured the original task requirements.
+  \item Designed \textbf{AgentLangBench} to test whether languages built for AI agents help them produce correct, formally verified, and faster code. Screened 42 languages and tools using smoke tests to select benchmark candidates.
+  \item Built an evaluation pipeline that runs coding agents in isolated \textbf{Docker} containers and automatically grades their submissions using hidden tests and language-specific verifiers.
+  \item Curated performance tasks with inputs of increasing size and C and Python baselines. Checked output correctness and algorithmic complexity before comparing runtimes.
 \end{itemize}
 
 % ===== Experience =====
