@@ -4,7 +4,7 @@
 \RequirePackage{fix-cm}
 \documentclass[10pt]{article}
 
-\usepackage[margin=0.75in]{geometry}
+\usepackage[hmargin=0.75in,vmargin=0.5in]{geometry}
 \usepackage[hidelinks]{hyperref}
 \usepackage{enumitem}
 \usepackage{tabularx}
@@ -49,20 +49,13 @@
     \faLinkedin\ \href{https://www.linkedin.com/in/steven-yang-7760293a3/}{linkedin}
 \end{center}
 
-% ===== Technical Skills =====
-\section*{Technical Skills}
-\begin{itemize}
-  \item \textbf{Programming Languages:} Python, Java, C, JavaScript, HTML/CSS, Rust
-  \item \textbf{Developer Tools:} Codex, Claude Code, Git/GitHub, Linux, VS Code, IntelliJ, Jupyter, LaTeX, PostgreSQL, Docker, Verus, Dafny
-  \item \textbf{Frameworks/Libraries:} NumPy, pandas, matplotlib, scikit-learn, SciPy, statsmodels, TensorFlow
-\end{itemize}
-
 % ===== Education =====
 \section*{Education}
 \roleline{University of Toronto}{Sep. 2024 -- May 2028 (Expected)}
 \begin{itemize}
   \item \textit{Honours Bachelor of Science}, Data Science Specialist, Computer Science Major
   \item cGPA: 4.0/4.0
+  \item \textbf{Awards:} Dean’s List Scholar (2025, 2026) and Woodsworth College Scholarship Fund (2026)
   \item Relevant Courseworks: Software Design, Software Tools and System Programming, Data Structures and Analysis, Data Science, Probability and Statistics, Linear Algebra, Multivariable Calculus
 \end{itemize}
 
@@ -103,19 +96,28 @@
 \roleline{Question Bank Platform}{2026}
 \orgline{Java, OpenAI API, Full-stack}{}
 \begin{itemize}
-  \item Built a Java application that uses \textbf{OCR} and \textbf{OpenAI Vision} to extract math questions and diagrams from PDFs into a searchable database.
-  \item Designed an asynchronous pipeline to segment PDFs, store questions as JSON, and flag low-confidence results for review.
+  \item Built a full-stack Java application to extract and structure math exam questions from PDFs into a searchable digital database.
+  \item Integrated \textbf{OCR} and multimodal \textbf{OpenAI Vision models} to parse question text, diagrams, metadata, and page-level images..
+  \item Designed async processing with confidence scoring, manual review flags, PDF segmentation, and structured JSON storage.
 \end{itemize}
 
-% ===== Activities / Awards =====
-\section*{Awards}
-\begin{itemize}
-  \item \textbf{Dean’s List Scholar} \hfill 2025, 2026 \\
-        University of Toronto
+\vspace{6pt}
 
-  \vspace{6pt}
-  \item \textbf{Woodsworth College Scholarship Fund} \hfill 2026 \\
-        Woodsworth College, University of Toronto
+\roleline{GroupFlow}{2025}
+\orgline{Java, Swing, MongoDB, JUnit}{}
+\begin{itemize}
+  \item Designed and implemented a collaborative task and group management application using \textbf{Clean Architecture}, separating entities, use cases, and UI layers.
+  \item Built core features including group creation, role-based permissions, task assignment, and progress tracking.
+  \item Improved code maintainability and testability through interface-driven design and unit testing with \textbf{JUnit}.
+  \item Collaborated in a team environment using \textbf{Git-based workflows}, pull requests, and code reviews.
+\end{itemize}
+
+% ===== Technical Skills =====
+\section*{Technical Skills}
+\begin{itemize}
+  \item \textbf{Programming Languages:} Python, Java, C, JavaScript, HTML/CSS, Rust
+  \item \textbf{Developer Tools:} Codex, Claude Code, Git/GitHub, Linux, VS Code, IntelliJ, Jupyter, LaTeX, PostgreSQL, Docker, Verus, Dafny
+  \item \textbf{Frameworks/Libraries:} NumPy, pandas, matplotlib, scikit-learn, SciPy, statsmodels, TensorFlow
 \end{itemize}
 
 \end{document}
